@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>Balık Simülasyonu</title>
+  </head>
+  <body>
+    <canvas id="oyun"></canvas>
+
+    <!-- HUD ayrı bir DOM katmanı: WebGL canvas'ının üstünde duruyor. -->
+    <div id="hud">
+      <div id="hud-sol">
+        <div id="hud-evre">Çipura</div>
+        <div class="cubuk"><div id="hud-buyume-dolgu" class="dolgu buyume"></div></div>
+        <div id="hud-buyume-not" class="not"></div>
+        <div id="hud-tokluk-not" class="not">tokluk</div>
+        <div class="cubuk"><div id="hud-tokluk-dolgu" class="dolgu"></div></div>
+      </div>
+
+      <div id="hud-sag">
+        <div id="hud-saat"></div>
+        <div id="hud-sayaclar" class="not"></div>
+        <div id="hud-kilit" class="not vurgu"></div>
+      </div>
+
+      <div id="hud-duyuru"></div>
+
+      <div id="hud-yardim">
+        <b>fare</b> yön ver · <b>sağ tuş</b> etrafına bak · <b>W/S</b> ileri-geri ·
+        <b>A/D</b> yana kay · <b>Q/E</b> veya <b>↑/↓</b> yukarı-aşağı · <b>Shift</b> hızlan ·
+        <b>Esc</b> fareyi bırak
+      </div>
+
+      <div id="hud-fare-kilidi">
+        <span>Yüzmek için tıkla</span>
+        <small>fare balığın yönünü verir · Esc ile çık</small>
+      </div>
+    </div>
+
+    <button id="sifirla" type="button" title="İlerlemeyi sıfırla">Sıfırla</button>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
