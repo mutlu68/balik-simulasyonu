@@ -11,7 +11,7 @@ durum: geliştirme
   (oyuncuya karşı) veya kaybetme yok. Resif oyuncuyu beklemiyor: sürüler kendi
   derinliklerinde dolaşıyor, NPC balıklar besleniyor, gece-gündüz döngüsü işliyor.
 - Müşteri/sahip: kişisel proje
-- Repo: yok (git deposu istenmedi)
+- Repo: https://github.com/mutlu68/balik-simulasyonu (PUBLIC, dal `main`, 2026-10-22). Gerçek sırlar yalnızca `.gitignore`'daki env dosyalarında; push öncesi sır taraması temizdi.
 
 ## Stack
 - Dil/çatı: TypeScript + Vite.
